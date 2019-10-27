@@ -1,0 +1,31 @@
+{
+  "name": "word-guess-game",
+  "version": "1.0.0",
+  "description": "Word Guess Game for Bootcamp using cli (node)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanmobrien/word-guess-game.git"
+  },
+  "keywords": [
+    "node",
+    "prompt",
+    "inquirer",
+    "clie"
+  ],
+  "author": "Bryan O'Brien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryanmobrien/word-guess-game/issues"
+  },
+  "homepage": "https://github.com/bryanmobrien/word-guess-game#readme",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "prompt": "^1.0.0",
+    "random-words": "^1.1.0",
+    "string": "^3.3.3"
+  }
+}
