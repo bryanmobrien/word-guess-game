@@ -3,7 +3,7 @@ Homework for UofM BC
 
 This node (command line) app simulates a hangman game.
 
-```node main.js```
+```node index.js```
 
 to start the game.
 
