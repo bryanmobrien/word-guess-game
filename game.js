@@ -1,10 +1,10 @@
-// NPM Packages
+// npm packages - acknowledged the string advisory
 var clear = require('clear');
 var prompt = require('prompt');
 var S = require('string');
 var randomWords = require('random-words');
 // Call the word.js constuctor.
-var Word = require('./word.js')
+var Word = require('./word.js');
 
 prompt.start;
 
@@ -16,7 +16,7 @@ var Game = function(){
 	this.wins = 0;
 	this.loses = 0;
 	this.playerName = '';
-	this.gameQuestion = ', do you want to play Hangman?'
+	this.gameQuestion = ', do you want to play Hangman?';
 	this.gameStatus = '';
 
 	var self = this;
@@ -118,7 +118,7 @@ var Game = function(){
 				self.gameWon();
 			// Check guess counter and if no guesses remaion. Update loss.	
 			} else if(self.guessCounter == 0) {
-				self.gameLost()
+				self.gameLost();
 			// If player has not guessed word and guesses remain, prompt to guess again.	
 			} else {
 				self.nextGuess();
@@ -128,7 +128,7 @@ var Game = function(){
 
 	// Update win counter and prompt to play again.
 	this.gameWon = function(){
-		this.gameQuestion = ', do you want to play again?'
+		this.gameQuestion = ', do you want to play again?';
 		this.gameStatus = 'You won';
 		this.wins++;
 		clear();
@@ -138,13 +138,13 @@ var Game = function(){
 
 	// Update loss counter and prompt to play again.
 	this.gameLost = function(){
-		this.gameQuestion = ', do you want to play again?'
+		this.gameQuestion = ', do you want to play again?';
 		this.gameStatus = 'You lost';
 		this.loses++;
 		clear();
 		self.playHangman();
 	};
 
-}
+};
 
 module.exports = Game;
